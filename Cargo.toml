@@ -2,7 +2,9 @@
 name = "mtanzaku"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["mirko-san https://github.com/mirko-san"]
+license = "MIT"
+description = "tanzaku maker by mirko"
+repository = "https://github.com/mirko-san/mtanzaku"
 
 [dependencies]
