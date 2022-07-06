@@ -13,6 +13,7 @@ pub fn create_all_vec(s:&String) -> Vec<char> {
 }
 
 pub fn stdin() {
+    let max_length = 5 + 7 + 5;
     let mut _buffer = String::new();
     print!("Enter a word : ");
     io::stdout().flush().unwrap();
@@ -21,6 +22,14 @@ pub fn stdin() {
     stdin.read_line(&mut _buffer).expect("Error getting guess");
 
     let str = create_all_vec(&_buffer);
+
+    let len: usize = str.len();
+
+    // XXX
+    // ここテストかいたほうがいい
+    if &max_length < &len {
+        panic!("文字数を 17 文字以下にしてください");
+    }
 
     println!("-----");
     for s in str {
